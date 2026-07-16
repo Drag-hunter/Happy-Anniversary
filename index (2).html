@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy 1st Wedding Anniversary</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+
+background:linear-gradient(135deg,#06142e,#173d77,#5b1545);
+
+overflow-x:hidden;
+
+color:white;
+
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+background:#FFD700;
+border-radius:20px;
+}
+
+/* Floating Hearts */
+
+.heart{
+
+position:fixed;
+
+bottom:-60px;
+
+font-size:24px;
+
+animation:floatHeart linear infinite;
+
+pointer-events:none;
+
+opacity:.8;
+
+z-index:1;
+
+}
+
+@keyframes floatHeart{
+
+0%{
+
+transform:translateY(0) rotate(0deg);
+
+opacity:0;
+
+}
+
+10%{
+
+opacity:1;
+
+}
+
+100%{
+
+transform:translateY(-120vh) rotate(360deg);
+
+opacity:0;
+
+}
+
+}
+
+/* Sparkles */
+
+.spark{
+
+position:fixed;
+
+width:3px;
+
+height:3px;
+
+background:white;
+
+border-radius:50%;
+
+animation:twinkle 2s infinite alternate;
+
+z-index:0;
+
+}
+
+@keyframes twinkle{
+
+from{
+
+opacity:.2;
+
+transform:scale(.5);
+
+}
+
+to{
+
+opacity:1;
+
+transform:scale(1.8);
+
+}
+
+}
+
+/* Hero */
+
+.hero{
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+padding:20px;
+
+position:relative;
+
+}
+
+.glass{
+
+background:rgba(255,255,255,.10);
+
+backdrop-filter:blur(20px);
+
+padding:40px;
+
+border-radius:25px;
+
+border:1px solid rgba(255,255,255,.2);
+
+box-shadow:0 0 35px rgba(255,215,0,.15);
+
+animation:fadeUp 2s;
+
+max-width:700px;
+
+width:90%;
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(60px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+.cross{
+
+font-size:50px;
+
+animation:crossGlow 2s infinite alternate;
+
+}
+
+@keyframes crossGlow{
+
+from{
+
+text-shadow:0 0 10px white;
+
+}
+
+to{
+
+text-shadow:0 0 25px gold;
+
+}
+
+}
+
+.title{
+
+font-family:'Great Vibes',cursive;
+
+font-size:70px;
+
+margin-top:10px;
+
+color:#FFD700;
+
+text-shadow:0 0 20px gold;
+
+}
+
+.names{
+
+font-size:36px;
+
+margin:20px 0;
+
+font-weight:700;
+
+}
+
+.date{
+
+font-size:22px;
+
+color:#ffe082;
+
+line-height:1.8;
+
+}
+
+.sub{
+
+margin-top:20px;
+
+font-size:18px;
+
+line-height:1.8;
+
+}
+
+.btn{
+
+display:inline-block;
+
+margin-top:30px;
+
+padding:15px 35px;
+
+background:#FFD700;
+
+color:#111;
+
+text-decoration:none;
+
+border-radius:40px;
+
+font-weight:bold;
+
+transition:.4s;
+
+}
+
+.btn:hover{
+
+transform:scale(1.08);
+
+box-shadow:0 0 20px gold;
+
+}
+
+section{
+
+padding:90px 20px;
+
+text-align:center;
+
+position:relative;
+
+z-index:2;
+
+}
+
+.section-title{
+
+font-size:45px;
+
+font-family:'Great Vibes',cursive;
+
+color:#FFD700;
+
+margin-bottom:30px;
+
+}
+
+.photo{
+
+width:90%;
+
+max-width:700px;
+
+border-radius:20px;
+
+border:5px solid gold;
+
+box-shadow:0 0 30px rgba(255,215,0,.35);
+
+transition:.5s;
+
+}
+
+.photo:hover{
+
+transform:scale(1.03);
+
+}
+
+.card{
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(15px);
+
+padding:30px;
+
+border-radius:20px;
+
+max-width:900px;
+
+margin:auto;
+
+line-height:2;
+
+font-size:18px;
+
+box-shadow:0 0 20px rgba(255,255,255,.1);
+
+}
+
+.verse{
+
+font-size:24px;
+
+font-style:italic;
+
+color:#ffe082;
+
+margin-bottom:15px;
+
+}
+
+.footer{
+
+padding:40px;
+
+text-align:center;
+
+font-size:18px;
+
+color:#ddd;
+
+}
+/* Couple Section */
+
+.couple-container{
+
+display:flex;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+gap:30px;
+
+margin-top:40px;
+
+}
+
+.photo-card{
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(15px);
+
+padding:15px;
+
+border-radius:20px;
+
+box-shadow:0 0 20px rgba(255,215,0,.25);
+
+transition:.5s;
+
+max-width:750px;
+
+}
+
+.photo-card:hover{
+
+transform:translateY(-10px) scale(1.02);
+
+box-shadow:0 0 35px gold;
+
+}
+
+.photo-title{
+
+font-size:26px;
+
+margin-bottom:15px;
+
+font-weight:bold;
+
+color:#FFD700;
+
+}
+
+/* Timeline */
+
+.timeline{
+
+max-width:900px;
+
+margin:auto;
+
+display:flex;
+
+flex-direction:column;
+
+gap:25px;
+
+}
+
+.timeline-item{
+
+background:rgba(255,255,255,.08);
+
+padding:20px;
+
+border-left:5px solid gold;
+
+border-radius:15px;
+
+text-align:left;
+
+transition:.5s;
+
+}
+
+.timeline-item:hover{
+
+transform:translateX(10px);
+
+}
+
+.timeline-item h3{
+
+color:#FFD700;
+
+margin-bottom:10px;
+
+}
+
+/* Bible Verse */
+
+.bible{
+
+font-size:30px;
+
+font-style:italic;
+
+color:#ffe082;
+
+line-height:1.8;
+
+}
+
+.reference{
+
+margin-top:20px;
+
+font-size:22px;
+
+font-weight:bold;
+
+color:gold;
+
+}
+
+/* Footer */
+
+.footer{
+
+background:#05101f;
+
+padding:40px;
+
+text-align:center;
+
+font-size:18px;
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.title{
+
+font-size:50px;
+
+}
+
+.names{
+
+font-size:28px;
+
+}
+
+.section-title{
+
+font-size:38px;
+
+}
+
+.photo{
+
+width:100%;
+
+}
+
+.card{
+
+font-size:16px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="hero">
+
+<div class="glass">
+
+<div class="cross">✝️</div>
+
+<h1 class="title">
+
+Happy Anniversary
+
+</h1>
+
+<div class="names">
+
+MAMAYA ❤️ AKKA
+
+</div>
+
+<div class="date">
+
+💍 17 July 2025
+
+<br><br>
+
+❤️
+
+<br><br>
+
+17 July 2026
+
+</div>
+
+<p class="sub">
+
+Celebrating One Beautiful Year of
+
+Love,
+
+Faith,
+
+Hope,
+
+and God's Endless Grace.
+
+</p>
+
+<a href="#couple" class="btn">
+
+Begin your Journey ❤️
+
+</a>
+
+</div>
+
+</div>
+
+<!-- Couple Section -->
+
+<section id="couple">
+
+<h2 class="section-title">
+
+Beautiful Couple
+
+</h2>
+
+<div class="couple-container">
+
+<div class="photo-card">
+
+<div class="photo-title">
+
+Premchand ❤️ Vijaya
+
+</div>
+
+<img src="couple.jpg" class="photo">
+
+</div>
+
+</div>
+
+</section>
+<!-- Wedding Memories -->
+
+<section id="wedding">
+
+<h2 class="section-title">
+
+Wedding Memories
+
+</h2>
+
+<div class="photo-card">
+
+<div class="photo-title">
+
+A Beautiful Beginning 💍
+
+</div>
+
+<img src="wedding.jpg" class="photo">
+
+</div>
+
+</section>
+
+<!-- Family -->
+
+<section id="family">
+
+<h2 class="section-title">
+
+Family Blessings ❤️
+
+</h2>
+
+<div class="photo-card">
+
+<div class="photo-title">
+
+Together As One Family
+
+</div>
+
+<img src="family.jpg" class="photo">
+
+</div>
+
+</section>
+
+<!-- Timeline -->
+
+<section>
+
+<h2 class="section-title">
+
+Your Journey
+
+</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+
+<h3>💍 17 July 2025</h3>
+
+<p>
+
+God united two beautiful hearts as one.
+
+A new chapter filled with love, faith and hope began.
+
+</p>
+
+</div>
+
+<div class="timeline-item">
+
+<h3>❤️ One Beautiful Year</h3>
+
+<p>
+
+365 days filled with countless memories,
+
+smiles,
+
+prayers,
+
+blessings,
+
+and unconditional love.
+
+</p>
+
+</div>
+
+<div class="timeline-item">
+
+<h3>🎉 17 July 2026</h3>
+
+<p>
+
+Celebrating your
+
+First Wedding Anniversary.
+
+May this be only the beginning of many wonderful years together.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Blessing -->
+
+<section>
+
+<h2 class="section-title">
+
+A Special Blessing
+
+</h2>
+
+<div class="card">
+
+<p>
+
+Dear <b>Premchand & Vijaya</b>,
+
+<br><br>
+
+Congratulations on completing one wonderful year together.
+
+May the Lord continue to bless your marriage with endless joy,
+
+peace,
+
+love,
+
+good health,
+
+and unwavering faith.
+
+May every sunrise bring new hope,
+
+every challenge make your bond stronger,
+
+and every passing year remind you of God's beautiful plan for your lives.
+
+<br><br>
+
+May your home always be filled with His grace,
+
+His presence,
+
+and His everlasting love.
+
+<br><br>
+
+Happy 1st Wedding Anniversary!
+
+❤️✝️
+
+</p>
+
+</div>
+
+</section>
+
+<!-- Bible Verse -->
+
+<section>
+
+<h2 class="section-title">
+
+Bible Verse
+
+</h2>
+
+<div class="card">
+
+<div class="verse">
+
+"Though one may be overpowered,
+
+two can defend themselves.
+
+A cord of three strands
+
+is not quickly broken."
+
+</div>
+
+<div class="reference">
+
+Ecclesiastes 4:12 ✝️
+
+</div>
+
+</div>
+
+</section>
+<!-- Footer -->
+
+<footer class="footer">
+
+<h2 style="font-family:'Great Vibes',cursive;font-size:45px;color:#FFD700;">
+Happy 1st Wedding Anniversary
+</h2>
+
+<p style="margin-top:15px;font-size:20px;">
+Premchand ❤️ Vijaya
+</p>
+
+<p style="margin-top:20px;">
+May God Bless Your Marriage Forever ✝️
+</p>
+
+<p style="margin-top:35px;color:#FFD700;">
+Made with ❤️ by Sunny
+</p>
+
+</footer>
+
+<script>
+
+/* ❤️ Floating Hearts */
+
+for(let i=0;i<35;i++){
+
+let heart=document.createElement("div");
+
+heart.className="heart";
+
+heart.innerHTML="❤️";
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.fontSize=(18+Math.random()*22)+"px";
+
+heart.style.animationDuration=(8+Math.random()*8)+"s";
+
+heart.style.animationDelay=Math.random()*8+"s";
+
+document.body.appendChild(heart);
+
+}
+
+/* ✨ Sparkles */
+
+for(let i=0;i<120;i++){
+
+let spark=document.createElement("div");
+
+spark.className="spark";
+
+spark.style.left=Math.random()*100+"vw";
+
+spark.style.top=Math.random()*100+"vh";
+
+spark.style.animationDelay=Math.random()*2+"s";
+
+document.body.appendChild(spark);
+
+}
+
+/* 🌹 Rose Petals */
+
+for(let i=0;i<20;i++){
+
+let petal=document.createElement("div");
+
+petal.innerHTML="🌹";
+
+petal.style.position="fixed";
+
+petal.style.left=Math.random()*100+"vw";
+
+petal.style.top="-60px";
+
+petal.style.fontSize=(18+Math.random()*18)+"px";
+
+petal.style.pointerEvents="none";
+
+petal.style.animation=`fall ${8+Math.random()*6}s linear infinite`;
+
+petal.style.animationDelay=Math.random()*8+"s";
+
+document.body.appendChild(petal);
+
+}
+
+const style=document.createElement("style");
+
+style.innerHTML=`
+
+@keyframes fall{
+
+0%{
+
+transform:translateY(-80px) rotate(0deg);
+
+opacity:0;
+
+}
+
+10%{
+
+opacity:1;
+
+}
+
+100%{
+
+transform:translateY(110vh) rotate(360deg);
+
+opacity:0;
+
+}
+
+}
+
+`;
+
+document.head.appendChild(style);
+
+/* 🎊 Confetti */
+
+function confetti(){
+
+for(let i=0;i<120;i++){
+
+let c=document.createElement("div");
+
+c.style.position="fixed";
+
+c.style.width="8px";
+
+c.style.height="8px";
+
+c.style.left=Math.random()*100+"vw";
+
+c.style.top="-20px";
+
+c.style.background=`hsl(${Math.random()*360},100%,60%)`;
+
+c.style.pointerEvents="none";
+
+c.style.animation=`fallConfetti ${3+Math.random()*2}s linear`;
+
+document.body.appendChild(c);
+
+setTimeout(()=>c.remove(),5000);
+
+}
+
+}
+
+const style2=document.createElement("style");
+
+style2.innerHTML=`
+
+@keyframes fallConfetti{
+
+0%{
+
+transform:translateY(-20px) rotate(0deg);
+
+}
+
+100%{
+
+transform:translateY(110vh) rotate(720deg);
+
+}
+
+}
+
+`;
+
+document.head.appendChild(style2);
+
+window.onload=()=>{
+
+setTimeout(confetti,1000);
+
+};
+
+</script>
+
+</body>
+
+</html>
